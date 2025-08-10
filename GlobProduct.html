@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tyres Moshi- Our Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="GlobtyresStyle.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- Header & Navigation -->
+    <header class="backdrop-blur-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-16">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Global-tyres-moshi-logo.png" alt="Global Tyres_Moshi Logo"
+                    class="h-20 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="index.html" class="nav-link text-black hover:text-blue-600 transition">Home</a>
+                <a href="GlobAbout.html" class="nav-link text-black hover:text-blue-600 transition">About</a>
+                <a href="GlobServices.html" class="nav-link text-black hover:text-blue-600 transition">Services</a>
+                <a href="GlobProduct.html" class="nav-link text-black hover:text-blue-600 transition">Products</a>
+                <a href="GlobContacts.html" class="nav-link text-black hover:text-blue-600 transition">Contact</a>
+                <a href="tel:+918796405066"
+                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pt-2 pb-4 border-t">
+            <a href="index.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Home</a>
+            <a href="GlobAbout.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">About Us</a>
+            <a href="GlobServices.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Services</a>
+            <a href="GlobProduct.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Products</a>
+            <a href="GlobContacts.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Contact</a>
+            <a href="tel:+918796405066"
+                class="block bg-yellow-400 text-center text-gray-900 font-bold mt-2 py-2 px-4 rounded-full">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Products Section -->
+        <section id="products" class="py-16 bg-white products-section animated-parent">
+            <div id="Glob-Products" class="container mx-auto px-6">
+                <div class="text-center mb-16 child-animate">
+                    <h2 class="text-4xl font-extrabold text-black child-animate">Our Accessories</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-lg child-animate child-animate-delay-2">A wide range of
+                        high-quality tyres for various driving needs and vehicles.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+                    <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md border">
+                        <img src="Images/Products/Alloy-Wheels.jpg" alt="Alloy Wheels" class="w-full h-60 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Alloy Wheels</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Alloy wheels are made from a blend of aluminum or
+                                magnesium, offering both strength and a lightweight structure.</p>
+                            <div class="flex justify-between items-center">
+                                <button onclick="showProduct('alloy')"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-lg transition text-sm">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md border">
+                        <img src="Images/Products/Global-Tyre.jpg" alt="All-Season Tyre"
+                            class="w-full h-60 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Tyres</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Reliable performance in all weather conditions,
+                                essential for vehicle safety, providing grip, and control on the road.</p>
+                            <div class="flex justify-between items-center">
+                                <button type="button" onclick="showProduct('tyres')"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-lg transition text-sm">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-gray-50 rounded-xl overflow-hidden shadow-md border">
+                        <img src="Images/Products/Tyre-Battries.jpg" alt="Off-Road Tyre"
+                            class="w-full h-60 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Battries</h3>
+                            <p class="text-gray-600 mb-4 text-sm">A well-maintained battery ensures reliable performance
+                                and prevents unexpected breakdowns.</p>
+                            <div class="flex justify-between items-center">
+                                <button onclick="showProduct('batteries')"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-lg transition text-sm">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10 child-animate" style="--delay: 1s;">
+                    <a href="GlobContacts.html" target="_blank"
+                        class="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-lg transition duration-300">
+                        Explore More Products
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="product-main" class="hidden py-16 bg-white products-section animated-parent">
+            <div id="product-alloy" class="hidden bg-white fade-in container mx-auto px-6">
+                <div class="container mx-auto px-6">
+
+                    <!-- Section Title -->
+                    <div class="text-center mb-16 child-animate">
+                        <h3 class="text-4xl md:text-3xl font-extrabold child-animate child-animate-delay-1">
+                            Alloy Wheels
+                        </h3>
+                    </div>
+
+                    <!-- Two Column Layout -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center child-animate child-animate-delay-3">
+                        <img src="Images/Products/Alloy-Wheel.jpg" alt="Alloy Wheel on Car"
+                            class="rounded-xl shadow-lg w-full">
+                        <div class="order-1 md:order-2">
+                            <h3 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Our Alloy Wheels?</h3>
+                            <ul class="space-y-4 text-lg text-gray-700">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <strong class="font-semibold">Enhanced Performance & Efficiency:</strong>
+                                        Lightweight design improves handling, braking, and fuel economy.
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <strong class="font-semibold">Unmatched Style:</strong> A wide range of modern
+                                        designs to give your car a head-turning, sporty look.
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <strong class="font-semibold">Superior Durability:</strong> Built from
+                                        corrosion-resistant alloys for long-lasting quality and finish.
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <a href="https://wa.me/918796405066?text=Hello%2C%20I%27m%20interested%20in%20Alloy%20Wheels.%20Could%20you%20please%20share%20more%20details%3F"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Alloy Wheel Gallery Section -->
+                    <div class="mt-16 child-animate child-animate-delay-4">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Alloy Wheel Gallery</h3>
+
+                        <!-- Image Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                            <!-- Always Visible Images -->
+                            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                <img src="Images/Products/Alloy-Wheel-1.jpg" alt="Alloy Wheel 1"
+                                    class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                <img src="Images/Products/Alloy-Wheel-2.jpg" alt="Alloy Wheel 2"
+                                    class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                <img src="Images/Products/Alloy-Wheel-3.jpg" alt="Alloy Wheel 3"
+                                    class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                            </div>
+
+                            <!-- Hidden Section -->
+                            <div id="extra-alloy-images" class="hidden contents">
+                                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                    <img src="Images/Products/Alloy-Wheel-4.jpg" alt="Alloy Wheel 4"
+                                        class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                                </div>
+                                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                    <img src="Images/Products/Alloy-Wheel-5.jpg" alt="Alloy Wheel 5"
+                                        class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                                </div>
+                                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                                    <img src="Images/Products/Alloy-Wheel-6.jpg" alt="Alloy Wheel 6"
+                                        class="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-500">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Show More Button -->
+                        <div class="text-end mt-8">
+                            <button onclick="toggleAlloyGallery()"
+                                class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg transition text-sm shadow-md"
+                                id="alloyShowMoreBtn">
+                                Show More
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Back Button -->
+                    <div class="text-center mt-10 child-animate child-animate-delay-5">
+                        <button onclick="goBack()"
+                            class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg transition text-sm shadow-md">
+                            ← Back to Products
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="product-tyres" class="hidden fade-in  bg-white container mx-auto px-6">
+                <!-- Section Title -->
+                <div class="text-center mb-16 child-animate">
+                    <h3 class="text-4xl md:text-3xl font-extrabold child-animate child-animate-delay-1">
+                        Top Tyre Brands We Offer
+                    </h3>
+                </div>
+
+                <!-- Tyre Brands Section -->
+                <div class="mt-16 child-animate child-animate-delay-4">
+                    <div class="grid md:grid-cols-3 lg:grid-cols-2 gap-8">
+                        <!-- Apollo Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/APOLLOTyre.png" alt="Apollo Tyres"
+                                class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Engineered for Indian roads, trusted for strength and mileage</strong><br>
+                                At <strong>Global Tyres Moshi</strong>, we proudly offer <strong>Apollo Tyres</strong> —
+                                one of India’s most reliable brands, known for durability and excellent grip. These
+                                tyres are a top choice for our customers due to their consistent performance, smooth
+                                ride, and fuel-saving design. Whether you drive a car, SUV, or commercial vehicle,
+                                Apollo Tyres available with us are built to handle all Indian road conditions with
+                                confidence and safety.<br>  
+                                <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Apollo%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- CEAT Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/CEATTyre.png" alt="CEAT Tyres" class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Built to last, designed to grip — perfect for everyday Indian
+                                    driving</strong><br>
+                                We provide a wide range of <strong>CEAT Tyres</strong> at Global Tyres Moshi — ideal for
+                                daily city commutes and rough rural roads alike. Known for safety, affordability, and
+                                solid performance, CEAT tyres from our store ensure strong grip, puncture resistance,
+                                and great control. A dependable choice for long journeys or daily drives, trusted by
+                                hundreds of satisfied customers.<br>  
+                                <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20CEAT%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Bridgestone Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/Bridgestone.jpg" alt="Bridgestone"
+                                class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>World-class precision for those who demand premium performance</strong><br>
+                                At Global Tyres Moshi, we offer premium <strong>Bridgestone Tyres</strong> for customers
+                                who demand top-tier quality and comfort. Known for global safety standards and advanced
+                                traction, these tyres deliver a refined driving experience, whether on city streets or
+                                highways. Available with us for those who want premium performance and long-lasting
+                                value.<br>  <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Bridgestone%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- JK Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/JKTyres.jpg" alt="JK Tyres" class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Made in India, made for endurance — power that performs</strong><br>
+                                <strong>JK Tyres</strong> available at Global Tyres Moshi are built for rugged Indian
+                                conditions — ideal for customers looking for load-bearing strength and long life. We
+                                recommend these tyres for personal cars, SUVs, and commercial vehicles alike, due to
+                                their excellent grip, deep treads, and reliable all-road performance.<br> 
+                                <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20JK%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Goodyear Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/GOODTyres.png" alt="Goodyear" class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Global trust, dependable safety — drive with confidence.</strong><br>
+                                Global Tyres Moshi brings you trusted <strong>Goodyear Tyres</strong> — globally
+                                acclaimed for safety and comfort. Designed to perform in all seasons and terrains, our
+                                Goodyear range is perfect for customers who prioritize control, comfort, and efficient
+                                braking. Drive confidently with tyres backed by global engineering and our trusted
+                                service.<br> <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Goodyear%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Yokohama Tyres -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/TyreBrand/yokohama1.jpeg" alt="Yokohama" class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Japanese engineering for thrill, style, and superior control.</strong><br>
+                                For those seeking style and sporty performance, <strong>Yokohama Tyres</strong>
+                                available at Global Tyres Moshi offer an unmatched driving feel. These tyres combine
+                                Japanese technology, low noise, excellent wet/dry grip, and a premium look — making them
+                                perfect for luxury and performance cars. Get yours from us and upgrade your drive
+                                instantly.<br> <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Yokohama%20Tyres"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Back Button -->
+                <div class="text-center mt-10 child-animate child-animate-delay-5">
+                    <button onclick="goBack()"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg transition text-sm shadow-md">
+                        ← Back to Products
+                    </button>
+                </div>
+            </div>
+
+            <!-- New detailed Batteries Section -->
+            <div id="product-batteries" class="hidden fade-in bg-white container mx-auto px-6">
+                <!-- Section Title -->
+                <div class="text-center mb-16 child-animate">
+                    <h3 class="text-4xl md:text-3xl font-extrabold child-animate child-animate-delay-1">
+                        Batteries
+                    </h3>
+                </div>
+
+                <!-- Two Column Layout -->
+                <div class="grid md:grid-cols-2 gap-8 items-center child-animate child-animate-delay-3">
+                    <img src="Images/Products/Tyre-Battries.jpg" alt="Car Battery" class="rounded-xl shadow-lg w-full">
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Our Batteries?</h3>
+                        <ul class="space-y-4 text-lg text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="font-semibold">Reliable Starting Power:</strong> Our batteries
+                                    provide
+                                    consistent, high-performance power to start your vehicle every time.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="font-semibold">Long-Lasting Durability:</strong> Built with robust
+                                    technology for extended life and better resistance to vibrations and temperature
+                                    changes.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-yellow-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="font-semibold">Maintenance-Free:</strong> Our range includes
+                                    maintenance-free batteries, so you can worry less and drive more.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Battery Brands Section -->
+                <div class="mt-16 child-animate child-animate-delay-4">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Top Battery Brands We Offer</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <!-- Exide Batteries -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/Products/Exide-battery.jpeg" alt="Exide Batteries"
+                                class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>Unmatched power, trusted by millions.</strong><br>
+                                We offer a full range of <strong> Exide Batteries</strong>, known for their superior
+                                performance and
+                                reliability. Designed to handle the tough Indian climate, Exide batteries deliver
+                                consistent power and long life, making them a top choice for cars, SUVs, and commercial
+                                vehicles.<br><a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Exide%20Batteries"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+                        </div>
+                        <!-- Amaron Batteries -->
+                        <div class="bg-white shadow-lg rounded-xl p-6 border hover:shadow-xl transition">
+                            <img src="Images/Products/Amaraon-Battery.jpg" alt="Amaron Batteries"
+                                class="w-32 h-auto mx-auto mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
+                                <strong>The power to last, a performance that excels.</strong><br>
+                                Experience the difference with <strong>Amaron Batteries</strong>, available at Global
+                                Tyres Moshi.
+                                With their advanced C21 alloy technology, Amaron batteries are engineered for high heat
+                                tolerance and a long-lasting, trouble-free performance.<br> <a href="https://wa.me/918796405066?text=Hello%20I%20am%20interested%20in%20Amaron%20Batteries"
+                                    target="_blank" class="underline text-yellow-500 hover:text-yellow-600">
+                                    Enquiry
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="text-center mt-10 child-animate child-animate-delay-5">
+                    <button onclick="goBack()"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-lg transition text-sm shadow-md">
+                        ← Back to Products
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918796405066?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tyres%20and%20services.%20Please%20share%20the%20details."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <img src="Images/WhatsApp.png" alt="WhatsApp Icon" class="wa-icon">
+    </a>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t border-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="mb-6 lg:mb-0">
+                    <h3 class="text-2xl font-extrabold mb-4">Global<span class="text-yellow-400">Tyres_Moshi</span></h3>
+                    <p class="text-gray-400">Your one-stop shop for premium tyres and professional auto services.
+                        Driving your safety forward.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/globaltyres_moshi?igsh=MWFlbmxtbTNramVibg" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="GlobAbout.html" class="footer-link">About Us</a></li>
+                        <li><a href="GlobServices.html" class="footer-link">Services</a></li>
+                        <li><a href="GlobProduct.html" class="footer-link">Products</a></li>
+                        <li><a href="GlobContacts.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Business Hours</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><span class="font-semibold text-gray-300">Mon - Sat :</span> 9:00 AM - 9:00 PM</li>
+                        <li><span class="font-semibold text-gray-300">Sunday :</span> 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span><a href="https://maps.app.goo.gl/z4c3sqHqYaL53iLr8" target="_blank"
+                                    class="hover:text-yellow-400 transition-colors">
+                                    Global Tyres_Moshi - new BRT Rd, opposite MNGL cng pump, Alandi rd, sastewadi Moshi,
+                                    pune, Pimpri-Chinchwad, Maharashtra 412105
+                                </a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-yellow-400"></i>
+                            <a href="tel:+918796405066" class="hover:text-yellow-400 transition-colors">+91
+                                8796405066</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            <a href="mailto:i.globaltyres@gmail.com"
+                                class="hover:text-yellow-400  transition-colors">i.globaltyres@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>&copy; 2025 Global Tyres. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="GlobTyresJS.js"></script>
+</body>
+
+</html>

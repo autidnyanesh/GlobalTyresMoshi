@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tyres Moshi - Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a modern, sleek look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS file (assuming GlobtyresStyle.css contains specific styles) -->
+    <link rel="stylesheet" href="GlobtyresStyle.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Additional custom styles for hover effects, etc., can be added here if needed */
+        .nav-link.active,
+        .footer-link:hover,
+        .social-icon:hover {
+            color: #3b82f6;
+            /* A blue hover color */
+        }
+    </style>
+</head>
+
+<body class="bg-white" style="background-image: url('Images/Contact/White-Background.jpg');">
+
+    <!-- Header & Navigation -->
+    <header class="backdrop-blur-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-16">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Global-tyres-moshi-logo.png" alt="Global Tyres_Moshi Logo"
+                    class="h-20 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="index.html" class="nav-link text-black hover:text-blue-600 transition">Home</a>
+                <a href="GlobAbout.html" class="nav-link text-black hover:text-blue-600 transition">About</a>
+                <a href="GlobServices.html" class="nav-link text-black hover:text-blue-600 transition">Services</a>
+                <a href="GlobProduct.html" class="nav-link text-black hover:text-blue-600 transition">Products</a>
+                <a href="GlobContacts.html" class="nav-link text-black hover:text-blue-600 transition">Contact</a>
+                <a href="tel:+918796405066"
+                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pt-2 pb-4 border-t">
+            <a href="index.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Home</a>
+            <a href="GlobAbout.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">About Us</a>
+            <a href="GlobServices.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Services</a>
+            <a href="GlobProduct.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Products</a>
+            <a href="GlobContacts.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Contact</a>
+            <a href="tel:+918796405066"
+                class="block bg-yellow-400 text-center text-gray-900 font-bold mt-2 py-2 px-4 rounded-full">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="py-8 bg-cover bg-center">
+            <div class="container mx-auto p-4 max-w-6xl">
+                <div class="bg-gray-100 rounded-3xl shadow-2xl overflow-hidden lg:flex lg:items-center">
+
+                    <!-- Contact Form Section -->
+                    <div class="w-full lg:w-1/2 p-8 md:p-16">
+                        <h2
+                            class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600 mb-2">
+                            Let's Connect</h2>
+                        <p class="text-gray-600 mb-10 text-lg">We'd love to hear from you. Fill out the form below to
+                            get in touch!</p>
+
+                       <form id="contactForm" action="https://formspree.io/f/xeozlzzg" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 sr-only">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full px-5 py-3 border border-gray-300 bg-white rounded-xl shadow-inner placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition duration-300"
+                                    placeholder="Your Name">
+                            </div>
+
+                            <div>
+                                <label for="mobile" class="block text-sm font-medium text-gray-700 sr-only">Mobile
+                                    Number</label>
+                                <input type="tel" id="mobile" name="mobile" required
+                                    class="mt-1 block w-full px-5 py-3 border border-gray-300 bg-white rounded-xl shadow-inner placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition duration-300"
+                                    placeholder="Your Mobile Number">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 sr-only">Email
+                                    ID</label>
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full px-5 py-3 border border-gray-300 bg-white rounded-xl shadow-inner placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition duration-300"
+                                    placeholder="Your Email ID">
+                            </div>
+
+                            <div>
+                                <label for="message"
+                                    class="block text-sm font-medium text-gray-700 sr-only">Message</label>
+                                <textarea id="message" name="message" rows="4"
+                                    class="mt-1 block w-full px-5 py-3 border border-gray-300 bg-white rounded-xl shadow-inner placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition duration-300"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+
+                            <div class="flex items-center justify-center">
+                                <button type="submit"
+                                    class="w-full px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold rounded-xl shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-white">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Map Section -->
+                    <div class="w-full lg:w-1/2 p-8 md:p-16">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-xl text-yellow-500 mr-5 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-800">Our Location</h4>
+                        <p class="text-gray-600 mb-4 text-sm"><a href="https://maps.app.goo.gl/z4c3sqHqYaL53iLr8" target="_blank"  class="hover:text-blue-600">
+                            Global Tyres_Moshi - new BRT Rd, opposite MNGL cng pump, Alandi rd, sastewadi Moshi, pune, Pimpri-Chinchwad, Maharashtra 412105
+                        </a></p>
+                    </div>
+
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-volume text-xl text-yellow-500 mr-5 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Call for Support</h4>
+                                <p class="text-gray-600 mb-4 text-sm"><a href="tel:+918796405066"
+                                        class="hover:text-blue-600">+91 87964 05066</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope-open-text text-xl text-yellow-500 mr-5 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email Us</h4>
+                                <p class="text-gray-600 mb-4 text-sm"><a href="mailto:i.globaltyres@gmail.com"
+                                        class="hover:text-blue-600">i.globaltyres@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.6957863561465!2d73.858273374967!3d18.677642482446608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c9216215f255%3A0xcb021b12182aa2b6!2sGLOBAL%20Tyres%20And%20Auto%20Services!5e0!3m2!1sen!2sin!4v1754328326142!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-md"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918796405066?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tyres%20and%20services.%20Please%20share%20the%20details."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <img src="Images/WhatsApp.png" alt="WhatsApp Icon" class="wa-icon">
+    </a>
+
+
+     <!-- Footer -->
+    <footer class="bg-black text-white border-t border-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="mb-6 lg:mb-0">
+                    <h3 class="text-2xl font-extrabold mb-4">Global<span class="text-yellow-400">Tyres_Moshi</span></h3>
+                    <p class="text-gray-400">Your one-stop shop for premium tyres and professional auto services.
+                        Driving your safety forward.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/globaltyres_moshi?igsh=MWFlbmxtbTNramVibg" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="GlobAbout.html" class="footer-link">About Us</a></li>
+                        <li><a href="GlobServices.html" class="footer-link">Services</a></li>
+                        <li><a href="GlobProduct.html" class="footer-link">Products</a></li>
+                        <li><a href="GlobContacts.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Business Hours</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><span class="font-semibold text-gray-300">Mon - Sat :</span> 9:00 AM - 9:00 PM</li>
+                        <li><span class="font-semibold text-gray-300">Sunday :</span> 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span><a href="https://maps.app.goo.gl/z4c3sqHqYaL53iLr8" target="_blank"  class="hover:text-yellow-400 transition-colors">
+                            Global Tyres_Moshi - new BRT Rd, opposite MNGL cng pump, Alandi rd, sastewadi Moshi, pune, Pimpri-Chinchwad, Maharashtra 412105
+                        </a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-yellow-400"></i>
+                            <a href="tel:+918796405066" class="hover:text-yellow-400 transition-colors">+91
+                                8796405066</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            <a href="mailto:i.globaltyres@gmail.com"
+                                class="hover:text-yellow-400  transition-colors">i.globaltyres@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>&copy; 2025 Global Tyres. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="GlobTyresJS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,625 @@
+/* --- Google Font --- */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- CSS Variables for Easy Theming --- */
+:root {
+    --color-primary: #ffffff;
+    /* slate-900: Used for body background, and icon text */
+    --color-secondary: #1e293b;
+    /* slate-800: This will be our main section background color */
+    --color-tertiary: #0f172a;
+    /* slate-900: Used for card backgrounds, slightly darker than sections */
+    --color-accent: #FBBF24;
+    /* yellow-400 */
+    --color-accent-hover: #F59E0B;
+    /* yellow-500 */
+    --color-text: #F9FAFB;
+    /* gray-50 */
+    --color-text-muted: #9CA3AF;
+    /* gray-400 */
+    --color-text-black: #000000;
+    --color-text-text-gray-600: #4B5563;
+
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(8px);
+    /* Tailwind's backdrop-blur-md */
+    -webkit-backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
+    border-bottom: none;
+    /* Removing the border bottom */
+}
+
+.nav-link {
+    position: relative;
+    color: var(--color-text-muted);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    /*color: var(--color-text);*/
+    color: var(--color-text-black);
+}
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.call-now-btn {
+    background-color: var(--color-accent);
+    color: #111827;
+    /* Dark text for contrast on yellow */
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.2);
+}
+
+.call-now-btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(251, 191, 36, 0.4);
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.hero-bg-slide.active {
+    opacity: 1;
+    animation: ken-burns 10s ease-out forwards;
+}
+
+@keyframes ken-burns {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Hero overlay should be dark enough for text to pop */
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.7));
+    z-index: 2;
+}
+
+
+.animated-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0) 60%);
+    animation: rotateBackground 20s linear infinite;
+    z-index: 1;
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.cta-button {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    /* Use primary for dark text on yellow */
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 0 5px 20px rgba(251, 191, 36, 0.25);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.5);
+}
+
+/* --- Why Choose Us Section --- */
+.why-choose-card {
+    background-color: ffffff;
+    ;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: var(--color-text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.why-choose-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px) scale(1.05);
+}
+
+.why-choose-card h3 {
+    color: black;
+    margin-bottom: 0.75rem;
+}
+
+.why-choose-card p {
+    color: #7c8087;
+    line-height: 1.6;
+}
+
+/* Icon wrapper styling is already good */
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--color-accent), var(--color-accent-hover));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    /* Dark text for icons */
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+/* --- Brands & Testimonials --- */
+/*.brand-logo {
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.4s ease;
+}*/
+
+.brand-logo:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+/* Add to your CSS file */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    /* This will hide the cards that are off-screen */
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    /* Controls the speed and smoothness of the slide transition */
+}
+
+.testimonial-card {
+    flex-shrink: 0;
+    /* Prevents cards from shrinking */
+    width: 100%;
+    /* Each card takes up the full width of the container */
+}
+
+/* Rest of your existing .testimonial-card styles */
+/* Add to your CSS file */
+/* Update your CSS file with these styles */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    /* Add these Tailwind CSS classes to your HTML instead */
+    /* max-width: 48rem; /* Equivalent to max-w-2xl */
+    /* margin: 0 auto; */
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* This is a new helper class for the JavaScript loop */
+.slider-track.reset-transform {
+    transition: none; /* Disable transition for a split second */
+}
+
+.testimonial-card {
+    flex-shrink: 0;
+    width: 100%; /* Each card fills the new, narrower container */
+}
+
+/* Keep your existing testimonial-card styles below this */
+.testimonial-card {
+    background: #eff4ff;
+    border-left: 4px solid var(--color-accent);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-text-muted);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+    
+
+.testimonial-card p {
+    color: #686868;
+    font-style: italic;
+    /* Keep the italic style */
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    color: var(--color-accent);
+    /* Ensure name is accent color */
+    font-weight: bold;
+}
+
+.testimonial-card p.text-sm {
+    /* For the 'Satisfied Customer' line */
+    color: var(--color-text-muted);
+    /* Muted text for designation */
+}
+
+
+/* --- Footer & WhatsApp --- */
+.social-icon {
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-accent);
+    transform: scale(1.2);
+}
+
+.footer-link {
+    color: var(--color-text-muted);
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+    color:var(--color-accent);
+    padding-left: 8px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* --- ANIMATIONS --- */
+
+/* Initial Hero Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*.animate-fade-in-down { animation: fadeInDown 0.8s ease-out both; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out both; }*/
+
+
+/* On-Scroll Animations */
+.animated-parent .child-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: var(--delay, 0s);
+}
+
+.animated-parent.in-view .child-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- About Section --- */
+.about-section {
+    background-color: var(--color-secondary);
+    /* Using slate-800 for section background */
+    color: var(--color-text);
+    /* Light text for readability on dark background */
+}
+
+.about-section h1 {
+    color: var(--color-accent);
+    /* Make the main heading pop with accent color */
+}
+
+.about-section h2 {
+    color: var(--color-text-black);
+    /* White text for subheadings */
+}
+
+.about-section p {
+    color: var(--color-text-text-gray-600);
+}
+
+.about-section ul li {
+    color: var(--color-text-text-gray-600);
+}
+
+.about-section .check-icon {
+    color: var(--color-accent);
+    /* Use accent color for checkmarks */
+}
+
+.about-image {
+    border-radius: 0.75rem;
+    /* Match other rounded elements */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow for depth */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.about-image:hover {
+    transform: translateY(-5px) scale(1.01);
+    /* Slight lift and scale on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Animations for the About Section - leveraging existing setup */
+.about-section .child-animate-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.about-section .child-animate-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.about-section .child-animate-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.about-section .child-animate-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.about-section .child-animate-delay-5 {
+    transition-delay: 0.5s;
+}
+
+.about-section .child-animate-delay-6 {
+    transition-delay: 0.6s;
+}
+
+
+
+/* Styles for reveal-up animation */
+
+.services-section h1 {
+    color: var(--color-accent);
+    /* Make the main heading pop with accent color */
+}
+
+.services-section h2 {
+    color: var(--color-text-black);
+    /* White text for subheadings */
+}
+
+.services-section p {
+     color: #2f2d2d;
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- New CSS for Scrollbar on Modal Description --- */
+#modalDescription {
+    max-height: 200px;
+    /* Set a maximum height for the description */
+    overflow-y: auto;
+    /* Add vertical scrollbar if content exceeds max-height */
+    padding-right: 15px;
+}
+
+/* Optional: Custom scrollbar styling for Webkit browsers (Chrome, Safari) */
+#modalDescription::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+#modalDescription::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+    border-radius: 10px;
+}
+
+#modalDescription::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+#modalDescription::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+/* Only if you want image hover zoom */
+.service-card img {
+  transition: transform 0.3s ease;
+}
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 20px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0; /* Ensures it starts hidden */
+    }
+
+    /* To apply a slight delay to the paragraph */
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+
+/*Product*/
+
+.products-section h1 {
+    color: var(--color-accent);
+    /* Make the main heading pop with accent color */
+}
+.products-section h1 {
+    color: var(--color-accent);
+    /* Make the main heading pop with accent color */
+}
+
+.product-card:hover{
+    box-shadow: 0 10px 20px rgba(59, 59, 59, 0.4);
+}
+
+@keyframes tyreDrop {
+  0% {
+    transform: translateY(-150px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(720deg);
+    opacity: 1;
+  }
+}
+
+.tyre-icon {
+  width: 60px;
+  height: 60px;
+  animation: tyreDrop 1s ease-out forwards;
+  opacity: 0;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+
+@media (min-width: 768px) {
+  .tyre-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+  
+  @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }

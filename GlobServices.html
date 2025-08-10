@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tyres Moshi- Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="GlobtyresStyle.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white">
+
+    <!-- Header & Navigation -->
+    <header class="backdrop-blur-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-16">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Global-tyres-moshi-logo.png" alt="Global Tyres_Moshi Logo" class="h-20 w-auto object-contain">
+            </a>
+             <div class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="index.html" class="nav-link text-black hover:text-blue-600 transition">Home</a>
+                <a href="GlobAbout.html" class="nav-link text-black hover:text-blue-600 transition">About</a>
+                <a href="GlobServices.html" class="nav-link text-black hover:text-blue-600 transition">Services</a>
+                <a href="GlobProduct.html" class="nav-link text-black hover:text-blue-600 transition">Products</a>
+                <a href="GlobContacts.html" class="nav-link text-black hover:text-blue-600 transition">Contact</a>
+                <a href="tel:+918796405066" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+            </div>
+           <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pt-2 pb-4 border-t">
+            <a href="index.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Home</a>
+            <a href="GlobAbout.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">About Us</a>
+            <a href="GlobServices.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Services</a>
+            <a href="GlobProduct.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Products</a>
+            <a href="GlobContacts.html" class="block text-gray-700 hover:bg-gray-100 rounded py-2 px-2">Contact</a>
+             <a href="tel:+918796405066" class="block bg-yellow-400 text-center text-gray-900 font-bold mt-2 py-2 px-4 rounded-full">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Services Section -->
+     <section id="services" class="py-16 bg-white reveal services-section animated-parent">
+   <div class="container mx-auto px-12">
+    <div class="text-center mb-16 child-animate animated-parent">
+        <h2 class="text-4xl font-extrabold text-black child-animate">Tyre Care Services</h2>
+        <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600 child-animate child-animate-delay-2">We provide comprehensive services to maximize your tyre life and vehicle performance.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animated-parent">
+        <div class="service-card bg-white p-4 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="wheel-balancing">
+            <img src="Images/Services/Wheel-Balancing-icon.jpg" alt="Wheel Balancing" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-4 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="Wheel-Alignment">
+            <img src="Images/Services/Wheel-Alignment-icon.jpg" alt="Wheel-Alignment" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-4 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="Tyre-Rotation">
+            <img src="Images/Services/Tyre-Rotation-icon.jpg" alt="Tyre Rotation" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-8 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="Tyre-Fitting">
+            <img src="Images/Services/Tyre-Fitting-icon.jpg" alt="Tyre Fitting" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-8 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="Puncture-Repair">
+            <img src="Images/Services/Puncture-Repair-icon.jpg" alt="Puncture Repair" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-8 rounded-xl shadow-md text-center border cursor-pointer child-animate" data-service="Nitrogen-Inflation">
+            <img src="Images/Services/Nitrogen-Inflation-icon.jpg" alt="Nitrogen Inflation" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+            <div class="flex justify-center mt-4">
+                <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                    More Details
+                </p>
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 lg:col-span-1 md:col-start-1 lg:col-start-2 child-animate">
+            <div class="service-card bg-white p-8 rounded-xl shadow-md text-center border cursor-pointer" data-service="Pickup-Drop">
+                <img src="Images/Services/Pickup-Drop.jpg" alt="Pick-up & Drop Service" class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 object-contain transform group-hover:scale-105 transition duration-300" />
+                <div class="flex justify-center mt-4">
+                    <p class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 w-56 rounded-lg transition-all duration-300">
+                        More Details
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 relative animate-fadeIn">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-3xl font-bold">&times;</button>
+            <h2 id="modalTitle" class="text-2xl font-bold text-gray-900 mb-4"></h2>
+            <img id="modalImage" src="" alt="" class="w-full h-64 object-contain rounded-lg mb-4">
+            <p id="modalDescription" class="text-gray-700 text-lg leading-relaxed"></p>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+        <!-- WhatsApp Button -->
+    <a href="https://wa.me/918796405066?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tyres%20and%20services.%20Please%20share%20the%20details."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <img src="Images/WhatsApp.png" alt="WhatsApp Icon" class="wa-icon">
+    </a>
+
+
+     <!-- Footer -->
+    <footer class="bg-black text-white border-t border-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="mb-6 lg:mb-0">
+                    <h3 class="text-2xl font-extrabold mb-4">Global<span class="text-yellow-400">Tyres_Moshi</span></h3>
+                    <p class="text-gray-400">Your one-stop shop for premium tyres and professional auto services.
+                        Driving your safety forward.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/globaltyres_moshi?igsh=MWFlbmxtbTNramVibg" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="GlobAbout.html" class="footer-link">About Us</a></li>
+                        <li><a href="GlobServices.html" class="footer-link">Services</a></li>
+                        <li><a href="GlobProduct.html" class="footer-link">Products</a></li>
+                        <li><a href="GlobContacts.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Business Hours</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><span class="font-semibold text-gray-300">Mon - Sat :</span> 9:00 AM - 9:00 PM</li>
+                        <li><span class="font-semibold text-gray-300">Sunday :</span> 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span><a href="https://maps.app.goo.gl/z4c3sqHqYaL53iLr8" target="_blank"  class="hover:text-yellow-400 transition-colors">
+                            Global Tyres_Moshi - new BRT Rd, opposite MNGL cng pump, Alandi rd, sastewadi Moshi, pune, Pimpri-Chinchwad, Maharashtra 412105
+                        </a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-yellow-400"></i>
+                            <a href="tel:+918796405066" class="hover:text-yellow-400 transition-colors">+91
+                                8796405066</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            <a href="mailto:i.globaltyres@gmail.com"
+                                class="hover:text-yellow-400  transition-colors">i.globaltyres@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>&copy; 2025 Global Tyres. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="GlobTyresJS.js"></script>
+</body>
+</html>

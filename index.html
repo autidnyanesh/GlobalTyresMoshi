@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tyres Moshi - Superior Performance & Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="GlobtyresStyle.css">
+</head>
+<body class="bg-white text-white">
+    <div class="bg-gray-300 text-black text-sm py-2 flex justify-around items-center">
+        <div>
+            <i class="fas fa-phone-alt mr-2"></i><a href="tel:+918796405066" class="hover:underline">+91 87964 05066</a>
+        </div>
+        <div>
+            <i class="fas fa-envelope mr-2"></i><a href="mailto:i.globaltyres@gmail.com" class="hover:underline">i.globaltyres@gmail.com</a>
+        </div>
+    </div>
+    <header class="backdrop-blur-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-16">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Global-tyres-moshi-logo.png" alt="Global Tyres_Moshi Logo" class="h-20 w-auto object-contain">
+            </a>
+             <div class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="index.html" class="nav-link text-black hover:text-blue-600 transition">Home</a>
+                <a href="GlobAbout.html" class="nav-link text-black hover:text-blue-600 transition">About</a>
+                <a href="GlobServices.html" class="nav-link text-black hover:text-blue-600 transition">Services</a>
+                <a href="GlobProduct.html" class="nav-link text-black hover:text-blue-600 transition">Products</a>
+                <a href="GlobContacts.html" class="nav-link text-black hover:text-blue-600 transition">Contact</a>
+                <a href="tel:+918796405066" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-all duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-black px-6 pt-2 pb-4 border-t border-gray-800">
+            <a href="index.html" class="block py-2 px-2 rounded">Home</a>
+            <a href="GlobAbout.html" class="block py-2 px-2 rounded">About Us</a>
+            <a href="GlobServices.html" class="block py-2 px-2 rounded">Services</a>
+            <a href="GlobProduct.html" class="block py-2 px-2 rounded">Products</a>
+            <a href="GlobContacts.html" class="block py-2 px-2 rounded">Contact</a>
+            <a href="tel:+918796405066" class="block bg-yellow-400 text-center text-gray-900 font-bold mt-2 py-2 px-4 rounded-full">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div id="hero-background-slider"></div>
+            
+            <div class="hero-overlay"></div>
+            <div class="animated-bg"></div>
+            <div class="container mx-auto px-6 py-32 md:py-48 text-center relative z-10">
+                <h1 class="text-5xl md:text-7xl font-black mb-4 leading-tight animate-fade-in-down" style="animation-delay: 0.2s;">Drive with Confidence</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.4s;">Premium tyres, expert services, and unmatched performance. Your journey starts here.</p>
+                <a href="GlobProduct.html" class="cta-button animate-fade-in-up" style="animation-delay: 0.6s;">Explore Our Products</a>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[rgb(241,241,241)]">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16 animated-parent">
+                    <h2 class="text-4xl font-extrabold text-black child-animate">Why Choose Global Tyres?</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto text-lg child-animate" style="--delay: 0.2s;">Your satisfaction and safety are at the core of everything we do.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10 text-center animated-parent">
+                    <div class="why-choose-card child-animate" style="--delay: 0.3s;">
+                        <div class="icon-wrapper"><i class="fas fa-award"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-600 mb-2">Quality Guaranteed</h3>
+                        <p class="text-black">We stock only genuine tyres from leading international and domestic brands.</p>
+                    </div>
+                    <div class="why-choose-card child-animate" style="--delay: 0.5s;">
+                        <div class="icon-wrapper"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-600 mb-2">Expert Technicians</h3>
+                        <p class="text-black">Our team is comprised of certified professionals with years of experience.</p>
+                    </div>
+                    <div class="why-choose-card child-animate" style="--delay: 0.7s;">
+                           <div class="icon-wrapper"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-600 mb-2">Honest Pricing</h3>
+                        <p class="text-black">We believe in transparent, competitive pricing with no hidden costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-slate-900">
+            <div class="container mx-auto px-6">
+               <div class="text-center mb-12 animated-parent">
+                    <h2 class="text-4xl font-extrabold text-white child-animate" style="--delay: 0s;">We Deal In Top Brands</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded child-animate" style="--delay: 0.1s;"></div>
+                </div>
+                 <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 animated-parent">
+                    <img src="Images/TyreBrand/APOLLOTyre.png" alt="apollo" class="h-16 brand-logo child-animate" style="--delay: 0.2s;">
+                    <img src="Images/TyreBrand/Bridgestone.jpg" alt="Bridgestone" class="h-16 brand-logo child-animate" style="--delay: 0.3s;">
+                    <img src="Images/TyreBrand/CEATTyre.png" alt="CEAT" class="h-16 brand-logo child-animate" style="--delay: 0.4s;">
+                    <img src="Images/TyreBrand/JKTyres.jpg" alt="JKTyres" class="h-16 brand-logo child-animate" style="--delay: 0.5s;">
+                    <img src="Images/TyreBrand/GOODTyres.png" alt="GOODTyres" class="h-16 brand-logo child-animate" style="--delay: 0.6s;">
+                    <img src="Images/TyreBrand/yokohama1.jpeg" alt="YOKOHAMA" class="h-16 brand-logo child-animate" style="--delay: 0.7s;">
+                </div>
+            </div>
+        </section>
+
+         <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 animated-parent">
+                    <h2 class="text-4xl font-extrabold text-black child-animate">What Our Customers Say?</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto text-lg child-animate" style="--delay: 0.2s;">Real feedback
+                        from our valued clients.</p>
+                </div>
+        
+                <div class="slider-container relative animated-parent max-w-2xl mx-auto">
+                    <div class="slider-track" id="testimonial-slider-track">
+                        <div class="testimonial-card child-animate" style="--delay: 0.3s;">
+                            <p class="text-black-800 italic">"I'm impressed with the overall quality and efficiency. Lifting my car is quick and hassle-free, and I appreciate the safety features. Excellent work Alignment and Balancing, professional Technician.. Must Visit.."</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-yellow-400">Sopan Pawar</h4>
+                                <p class="text-sm text-gray-600">Infinity India - Sales</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card child-animate" style="--delay: 0.5s;">
+                            <p class="text-gray-600 italic">"Great service and quick installation! Staff was knowledgeable and helped me choose the right tyres at a good price. Highly recommend!👍"
+                            </p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-yellow-400">Yash Lamkhade</h4>
+                                <p class="text-sm text-gray-600">SUV Owner</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card child-animate" style="--delay: 0.7s;">
+                            <p class="text-gray-600 italic">"I had a fantastic experience. The installation was quick and prices were competitive. I’ll definitely be returning here and highly recommend this shop to anyone looking for quality service and professionalism!"</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-yellow-400">Suraj Singh</h4>
+                                <p class="text-sm text-gray-600">Customer</p>
+                            </div>
+                        </div>
+                      <div class="testimonial-card child-animate" style="--delay: 0.7s;">
+                            <p class="text-gray-600 italic">"We have the very good experience with Global tyres, We procure CEAT tyre from this showroom, it is very nice product & delivery services from proactive Showroom staff. Most important is Owner Mr. Nitin is also very nice...He gives information about product specifications, types, product manufacturing dates & specially warranty details.."</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-yellow-400">Vinod Chavhan</h4>
+                                <p class="text-sm text-gray-600">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="text-center mt-10 child-animate" style="--delay: 1s;">
+                    <a href="https://g.co/kgs/68XvtLh" target="_blank"
+                        class="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-lg transition duration-300">
+                        Read More Reviews on Google
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/918796405066?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tyres%20and%20services.%20Please%20share%20the%20details."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <img src="Images/WhatsApp.png" alt="WhatsApp Icon" class="wa-icon">
+    </a>
+
+  <!-- Festive Diwali Offer Popup -->
+    <!-- <div id="offerPopup" class="fixed inset-0 flex justify-center items-center z-50">
+        <div class="bg-white p-10 rounded-2xl text-center relative max-w-lg w-[90%] shadow-2xl border-2 border-gray-500 animate-[bounceIn_0.6s_cubic-bezier(0.68,-0.55,0.27,1.55)]">
+            <span class="absolute top-4 right-4 text-4xl font-bold text-gray-400 cursor-pointer transition-colors hover:text-gray-700" onclick="closePopup()">&times;</span>
+            
+            <div class="my-4">
+
+                <img src="Images/Gallery/celebration.avif" alt="Celebration Icon" class="mx-auto w-24 h-24 object-cover">
+            </div>
+
+            <h2 class="text-3xl text-red-500 my-0 font-bold uppercase tracking-wide">Diwali Dhamaka!</h2>
+            <p class="text-lg font-semibold text-gray-700 my-2">Valid from Oct 25th - Nov 10th</p>
+            <p class="text-base text-gray-500 my-8 leading-relaxed">Get up to 25% off on all car tires, alloys, and batteries! Celebrate this festive season with great deals and a safe ride. Limited time offer!</p>
+            <a href="#" class="inline-block bg-green-500 text-white px-8 py-4 no-underline rounded-full font-bold tracking-wider uppercase shadow-md transition-all duration-200 hover:scale-105 hover:bg-green-600">Shop Now</a>
+        </div>
+    </div> -->
+    
+     <!-- Footer -->
+    <footer class="bg-black text-white border-t border-gray-800">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="mb-6 lg:mb-0">
+                    <h3 class="text-2xl font-extrabold mb-4">Global<span class="text-yellow-400">Tyres_Moshi</span></h3>
+                    <p class="text-gray-400">Your one-stop shop for premium tyres and professional auto services.
+                        Driving your safety forward.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/globaltyres_moshi?igsh=MWFlbmxtbTNramVibg" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="GlobAbout.html" class="footer-link">About Us</a></li>
+                        <li><a href="GlobServices.html" class="footer-link">Services</a></li>
+                        <li><a href="GlobProduct.html" class="footer-link">Products</a></li>
+                        <li><a href="GlobContacts.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Business Hours</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><span class="font-semibold text-gray-300">Mon - Sat :</span> 9:00 AM - 9:00 PM</li>
+                        <li><span class="font-semibold text-gray-300">Sunday :</span> 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-wider">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span><a href="https://maps.app.goo.gl/z4c3sqHqYaL53iLr8" target="_blank"  class="hover:text-yellow-400 transition-colors">
+                            Global Tyres_Moshi - new BRT Rd, opposite MNGL cng pump, Alandi rd, sastewadi Moshi, pune, Pimpri-Chinchwad, Maharashtra 412105
+                        </a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-yellow-400"></i>
+                            <a href="tel:+918796405066" class="hover:text-yellow-400 transition-colors">+91
+                                8796405066</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            <a href="mailto:i.globaltyres@gmail.com"
+                                class="hover:text-yellow-400  transition-colors">i.globaltyres@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>&copy; 2025 Global Tyres. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="GlobTyresJS.js"></script>
+</body>
+</html>
